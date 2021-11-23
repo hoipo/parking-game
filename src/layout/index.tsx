@@ -25,10 +25,9 @@ const Layout  = ({ children }: LayoutProps) => {
             <li>Genesis</li>
           </ul>
           <Link to='/app' className={styles['play-button']}>Play&Earn</Link>
-
         </div>
       </Header>
-      <Content style={{ padding: '0 50px' }}>{ children }</Content>
+      <Content className={styles.content}>{ children }</Content>
       <Footer style={{ textAlign: 'center' }}>Parking ©2021 Created by Parking Team</Footer>
     </AntdLayout>
   )

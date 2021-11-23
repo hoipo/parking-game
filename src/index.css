@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Agrandir;
+  src: url(./assets/Agrandir-GrandHeavy.otf);
+}
 /* 
   * The purpose of reset is not to allow default styles to be consistent across all browsers, but to reduce the potential problems of default styles.
 */
