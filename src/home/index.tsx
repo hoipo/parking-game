@@ -1,7 +1,10 @@
+import Banner from "../components/banner"
+import styles from './styles.module.less';
+
 const Home = () => {
     return (
-        <div>
-            HOME
+        <div className={styles.home}>
+            <Banner />
         </div>
     )
 }

@@ -1,0 +1,66 @@
+.layout {
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  line-height: 20px;
+  width: 100%;
+  .logo{
+    img{
+      width: 157px;
+      height: 26px;
+    }
+  }
+  .header{
+    height: 100px;
+    background: #1A1A1A;
+    .header-body{
+      height: 100px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 0 auto;
+      max-width: 1440px;
+      min-width: 1220px;
+      width: 100%;
+      padding: 0 160px;
+    }
+  }
+  .nav{
+    list-style-type: none;
+    flex: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: #FFFFFF;
+    margin: 0;
+    white-space: nowrap;
+    padding-left: 0;
+    li{
+      margin-left: 40px;
+    }
+  }
+  .play-button{
+    background: #FCBD3B;
+    border-radius: 6px;
+    width: 156px;
+    height: 52px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 52px;
+    color: #1A1A1A;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1440px) {
+  .layout {
+    .header{
+      .header-body{
+        padding: 0 50px;
+      }
+    }
+  }
+}

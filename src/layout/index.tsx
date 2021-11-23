@@ -1,6 +1,9 @@
 import { Layout as AntdLayout } from 'antd';
 import { Link } from 'react-router-dom';
-import './layout.scss';
+import styles from './layout.module.less';
+
+
+import logo from "./images/logo.png";
 const { Header, Footer, Content } = AntdLayout;
 
 export interface LayoutProps  { 
@@ -9,18 +12,21 @@ export interface LayoutProps  {
 
 const Layout  = ({ children }: LayoutProps) => {
   return (
-    <AntdLayout className="layout">
-      <Header>
-        <Link to='/'>Parking</Link>
-        <ul className="nav-list">
-          <li>Parking</li>
-          <li>Features</li>
-          <li>Road Map</li>
-          <li>Tokenomics</li>
-          <li>Docs</li>
-          <li>Genesis</li>
-        </ul>
-        <Link to='/app'>Play&Earn</Link>
+    <AntdLayout className={styles.layout}>
+      <Header className={styles.header}>
+        <div className={styles['header-body']}>
+          <Link to='/' className={styles.logo}><img src={logo} alt="Parking" /></Link>
+          <ul className={styles.nav}>        
+            <li>Parking</li>
+            <li>Features</li>
+            <li>Road Map</li>
+            <li>Tokenomics</li>
+            <li>Docs</li>
+            <li>Genesis</li>
+          </ul>
+          <Link to='/app' className={styles['play-button']}>Play&Earn</Link>
+
+        </div>
       </Header>
       <Content style={{ padding: '0 50px' }}>{ children }</Content>
       <Footer style={{ textAlign: 'center' }}>Parking ©2021 Created by Parking Team</Footer>
