@@ -37,6 +37,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+  
 }
 
 /* 重置列表元素 - reset the list element */
@@ -111,3 +112,7 @@ q:before, q:after {
 	content: none;
 }
 
+.right-arrow{
+  width: 9px;
+  height: 12px;
+}
