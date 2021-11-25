@@ -17,11 +17,13 @@ const What = () => {
           <p>Parking Infinity is an NFT-based game that allows everyone to own the coolest and one-of-its-kind automobile in the metaverse.</p>
           <p>
             By trading NFTs, including cars, props, etc, or simply parking their beloved NFT cars in the carpark (mining), users can participate in Parking Infinity GameFi, and gain skyrocketing rewards with APR up to 300+%.</p>
-            <Row className={styles['button-wrapper']}>
+            <Row className={styles['button-wrapper']} gutter={16}>
               <Col>
               <PButton  extra={<img className='right-arrow' src={rightArrow} alt="" />}>Play&Earn</PButton>
               </Col>
-              <Col></Col>
+              <Col>
+                <PButton type='secondary'>Token Metric</PButton>
+              </Col>
             </Row>
         </Col>
       </Row>

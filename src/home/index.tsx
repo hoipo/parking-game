@@ -1,6 +1,7 @@
 import Banner from "../components/banner"
 import HeadCard from "../components/headCard"
 import What from "../components/what"
+import Why from "../components/why"
 import styles from './styles.module.less';
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
             <Banner />
             <HeadCard />
             <What />
+            <Why />
         </div>
     )
 }
