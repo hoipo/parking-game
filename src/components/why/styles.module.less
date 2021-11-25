@@ -1,16 +1,80 @@
-.why{
+.why {
   position: relative;
-  width: 1440px;
   background-color: #F4F4F4;
-  height: 500px;
-  &::before{
+  box-sizing: border-box;
+  padding: 160px;
+
+  &::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -78px;
+    left: 252px;
     background-image: url(./images/circle2.svg);
     width: 212px;
     height: 212px;
     background-size: 100%;
+  }
+
+  .content {
+    position: relative;
+    width: 100%;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      background-image: url('./images/angle.svg');
+      width: 36px;
+      height: 36px;
+      background-size: 100%;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+      transform: rotate(-90deg);
+    }
+
+    .why-parking-infinity-text-bg {
+      position: absolute;
+      bottom: 50px;
+      left: 50px;
+      width: 468px;
+      height: 217px;
+    }
+
+    .title {
+      font-family: Agrandir;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 74px;
+      line-height: 82px;
+      padding: 87px 0 0 58px;
+      text-transform: uppercase;
+      position: absolute;
+      width: fit-content;
+      &::after {
+        content: '';
+        position: absolute;
+        right: -170px;
+        top: 11px;
+        background-image: url(./images/ready-toearn.svg);
+        background-size: 100%;
+        width: 240px;
+        height: 240px;
+      }
+
+      &-yellow {
+        color: #FCBD3B;
+      }
+    }
+    .card-wrapper{
+      position: relative;
+      top: 0;
+      width: 100%;
+    }
   }
 }

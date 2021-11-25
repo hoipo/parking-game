@@ -1,10 +1,11 @@
 import { Layout as AntdLayout } from 'antd';
+import Footer from '../components/footer'
 import { Link } from 'react-router-dom';
 import styles from './layout.module.less';
 
 
-import logo from "./images/logo.png";
-const { Header, Footer, Content } = AntdLayout;
+import logo from "../assets/logo.png";
+const { Header, Content } = AntdLayout;
 
 export interface LayoutProps  { 
   children: React.ReactNode
@@ -28,7 +29,7 @@ const Layout  = ({ children }: LayoutProps) => {
         </div>
       </Header>
       <Content className={styles.content}>{ children }</Content>
-      <Footer style={{ textAlign: 'center' }}>Parking ©2021 Created by Parking Team</Footer>
+      <Footer />
     </AntdLayout>
   )
 }

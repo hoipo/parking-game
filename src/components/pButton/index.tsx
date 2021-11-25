@@ -2,8 +2,6 @@ import { CSSProperties } from "react"
 import classnames from 'classnames';
 import styles from './styles.module.less';
 
-console.log(styles);
-
 export interface PButtonProps {
   className?: string;
   style?: CSSProperties;
