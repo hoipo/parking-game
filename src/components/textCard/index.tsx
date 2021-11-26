@@ -9,7 +9,7 @@ const TextCard = (props: TextCardProps) => {
     return (
         <div className={styles['text-card']}>
             <div className={styles.title}>{title}</div>
-            { paragraphs?.map(t => <p className={styles.paragraph}>{t}</p>)}
+            { paragraphs?.map(t => <p key={t} className={styles.paragraph}>{t}</p>)}
         </div>
     )
 }

@@ -4,28 +4,73 @@
     position: relative;
     padding: 160px;
 
-    .title {
-        font-family: Agrandir;
-        font-style: normal;
-        font-weight: 800;
-        font-size: 74px;
-        line-height: 82px;
-        text-transform: uppercase;
-        color: #FFFFFF;
+    .title-wrapper {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        .title {
+            font-family: Agrandir;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 74px;
+            line-height: 82px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+
+        .subtitle {
+            margin-top: 26px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 28px;
+            color: #FFFFFF;
+            width: 474px;
+            position: relative;
+
+            &::after {
+                content: '';
+                background-image: url(../../assets/star2.svg);
+                background-size: 100%;
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                bottom: -90px;
+                left: 0;
+            }
+        }
     }
 
-    .subtitle {
-        margin-top: 26px;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 28px;
-        color: #FFFFFF;
-        width: 474px;
-        &::after{
-            content: '';
-            
+    .carousel {
+        height: 440px;
+        .card {
+            position: absolute;
+            top: 0;
+            background: #FFFFFF;
+            border-radius: 16px;
+            width: 440px;
+            height: 440px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            perspective: 100px;
+            &:nth-child(2){
+                transform: translate(45px, 0) scale(0.9);
+                background-color: rgba(255, 255, 255, 0.3);
+              
+            }
+            &:nth-child(1){
+                transform: translate(90px, 0) scale(0.8);
+                background-color: rgba(255, 255, 255, 0.08);
+            }
+            &:nth-child(2),&:nth-child(1){
+                img{
+                    visibility: hidden;
+                }
+            }
         }
     }
 }

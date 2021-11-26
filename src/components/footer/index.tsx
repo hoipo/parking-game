@@ -22,25 +22,19 @@ const Footer = () => {
                     <Row justify="space-between" align='middle'>
                         <Col>OUR SOCIALS:</Col>
                         <Col className={styles['circle-border']}>
-                            <img src={telegramIcon} alt="telegramIcon" />
+                            <a target="_blank" href='https://t.me/Parking_Infinity'><img src={telegramIcon} alt="telegramIcon" /></a>
                         </Col>
                         <Col className={styles['circle-border']}>
-                            <img src={twitterIcon} alt="twitterIcon" />
+                            <a target="_blank" href='https://twitter.com/InfinityParking'><img src={twitterIcon} alt="twitterIcon" /></a>
                         </Col>
                         <Col className={styles['circle-border']}>
-                            <img src={mediumIcon} alt="mediumIcon" />
+                            <a target="_blank" href='https://discord.gg/zPcADh4fSA'><img src={subtractIcon} alt="subtractIcon" /></a>
                         </Col>
                         <Col className={styles['circle-border']}>
-                            <img src={subtractIcon} alt="subtractIcon" />
+                            <a target="_blank" href='https://www.instagram.com/parking_infinity/'><img src={instagramIcon} alt="instagramIcon" /></a>
                         </Col>
                         <Col className={styles['circle-border']}>
-                            <img src={instagramIcon} alt="instagramIcon" />
-                        </Col>
-                        <Col className={styles['circle-border']}>
-                            <img src={facebookIcon} alt="facebookIcon" />
-                        </Col>
-                        <Col className={styles['circle-border']}>
-                            <img src={mailIcon} alt="mailIcon" />
+                            <a target="_blank" href='https://www.facebook.com/Parking_Infinity-100132085847765'><img src={facebookIcon} alt="facebookIcon" /></a>
                         </Col>
                     </Row>
                 </Col>
