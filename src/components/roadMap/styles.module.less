@@ -1,0 +1,51 @@
+.road-map {
+    color: #FFFFFF;
+    background-color: #1A1A1A;
+    width: 1440px;
+
+    .title {
+        font-family: Agrandir;
+        font-style: normal;
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        font-size: 74px;
+        line-height: 82px;
+        letter-spacing: -0.02em;
+        font-weight: 800;
+
+        &>span {
+            position: relative;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -80px;
+            right: 270px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-image: url(./images/circle.svg);
+            width: 298px;
+            height: 274px;
+            background-size: 100%;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: -108px;
+            left: 0;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-image: url(./images/star.svg);
+            width: 108px;
+            height: 128px;
+            background-size: 100%;
+        }
+    }
+
+    .item-wrapper {
+        padding: 80px 160px 160px;
+    }
+}

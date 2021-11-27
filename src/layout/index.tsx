@@ -18,12 +18,12 @@ const Layout  = ({ children }: LayoutProps) => {
         <div className={styles['header-body']}>
           <Link to='/' className={styles.logo}><img src={logo} alt="Parking" /></Link>
           <ul className={styles.nav}>        
-            <li>Parking</li>
-            <li>Features</li>
-            <li>Road Map</li>
-            <li>Tokenomics</li>
-            <li>Docs</li>
-            <li>Genesis</li>
+            <li><a href='#parking'>Parking</a></li>
+            <li><a href='#features'>Features</a></li>
+            <li><a href='#road-map'>Road Map</a></li>
+            <li><a href='#tokenomics'>Tokenomics</a></li>
+            <li><a href='#docs'>Docs</a></li>
+            <li><a href='#genesis'>Genesis</a></li>
           </ul>
           <Link to='/app' className={styles['play-button']}>Play&Earn</Link>
         </div>
