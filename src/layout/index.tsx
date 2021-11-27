@@ -2,7 +2,7 @@ import { Layout as AntdLayout } from 'antd';
 import Footer from '../components/footer'
 import { Link } from 'react-router-dom';
 import styles from './layout.module.less';
-
+import PButton from '../components/pButton';
 
 import logo from "../assets/logo.png";
 const { Header, Content } = AntdLayout;
@@ -25,7 +25,8 @@ const Layout  = ({ children }: LayoutProps) => {
             <li><a href='#docs'>Docs</a></li>
             <li><a href='#genesis'>Genesis</a></li>
           </ul>
-          <Link to='/app' className={styles['play-button']}>Play&Earn</Link>
+          <PButton commingSoon={true} style={{height: '52px'}}>Play&Earn</PButton>
+
         </div>
       </Header>
       <Content className={styles.content}>{ children }</Content>

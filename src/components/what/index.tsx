@@ -19,7 +19,7 @@ const What = () => {
             By trading NFTs, including cars, props, etc, or simply parking their beloved NFT cars in the carpark (mining), users can participate in Parking Infinity GameFi, and gain skyrocketing rewards with APR up to 300+%.</p>
             <Row className={styles['button-wrapper']} gutter={16}>
               <Col>
-              <PButton  extra={<img className='right-arrow' src={rightArrow} alt="" />}>Play&Earn</PButton>
+              <PButton commingSoon={true}  extra={<img className='right-arrow' src={rightArrow} alt="" />}>White paper</PButton>
               </Col>
               <Col>
                 <PButton type='secondary'>Token Metric</PButton>

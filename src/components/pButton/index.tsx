@@ -1,4 +1,4 @@
-import { CSSProperties } from "react"
+import { CSSProperties, useState } from "react"
 import classnames from 'classnames';
 import styles from './styles.module.less';
 
@@ -8,14 +8,23 @@ export interface PButtonProps {
   children?: React.ReactNode;
   extra?: React.ReactNode;
   type?: 'secondary' | '';
+  commingSoon?: boolean;
   onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 }
 
 const PButton = (props: PButtonProps) => {
-  const { children, extra, onClick, className, type } = props
+  const { children, extra, onClick, className, type, style, commingSoon = false } = props
+
+  const [cs, setCs] = useState(false)
+  const triggerCommingSoon = () => {
+    setCs(true);
+    setTimeout(() => {
+      setCs(false);
+    }, 3000);
+  }
   return (
-    <button onClick={onClick} className={classnames(styles['p-button'], className, type === 'secondary' && styles['type-secondary'])}>
-      <span className={styles.text}>{children}</span>
+    <button style={style} onClick={commingSoon ? triggerCommingSoon : onClick} className={classnames(styles['p-button'], className, (type === 'secondary' || cs) && styles['type-secondary'])}>
+      <span className={styles.text}>{cs ? 'comming soon...'  : children}</span>
       {extra ? <span className={styles.extra}>{extra}</span> : null}
     </button>
   )
