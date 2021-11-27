@@ -27,7 +27,6 @@ jobs:
         npm install
         npm run build
         
-    - uses: actions/checkout@v1
     - name: Install coscmd
       run: sudo pip install coscmd
     - name: Configure coscmd
