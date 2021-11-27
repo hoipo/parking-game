@@ -2,6 +2,10 @@
   font-family: Agrandir;
   src: url(./assets/Agrandir-GrandHeavy.otf);
 }
+@font-face {
+  font-family: Montserrat;
+  src: url(./assets/Montserrat-Regular.ttf);
+}
 /* 
   * The purpose of reset is not to allow default styles to be consistent across all browsers, but to reduce the potential problems of default styles.
 */
@@ -26,8 +30,9 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	font: Montserrat;
 	vertical-align: baseline;
+
 }
 
 /* HTML5 display-role reset for older browsers */

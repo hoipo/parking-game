@@ -4,7 +4,7 @@ import bagImg from './images/bag.svg'
 const Tokenomics = () => {
     return (
         <div id='tokenomics' className={styles.tokenomics}>
-            <div className={styles.title}><span>NFT Road Map</span></div>
+            <div className={styles.title}><span>Tokenomics</span></div>
             <Row gutter={80} justify='center' align='middle'>
                 <Col flex='1' className={styles.bag}>
                     <img src={bagImg} alt="bagImg"  />
