@@ -2,11 +2,9 @@ import { Col, Layout, Row } from 'antd';
 import logo from '../../assets/logo.png'
 import telegramIcon from './images/telegram-icon.svg'
 import twitterIcon from './images/twitter-icon.svg'
-import mediumIcon from './images/medium-icon.svg'
 import subtractIcon from './images/subtract-icon.svg'
 import instagramIcon from './images/instagram-icon.svg'
 import facebookIcon from './images/facebook-icon.svg'
-import mailIcon from './images/mail-icon.svg'
 import styles from './styles.module.less'
 
 const { Footer: AntFooter } = Layout;

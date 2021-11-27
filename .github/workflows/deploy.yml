@@ -37,4 +37,4 @@ jobs:
         REGION: ap-hongkong
       run: coscmd config -a $SECRET_ID -s $SECRET_KEY -b $BUCKET -r $REGION
     - name: Upload
-      run: coscmd upload -rfs --delete ./dist/ /
+      run: coscmd upload -rfs --delete ./build/ /
