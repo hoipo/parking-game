@@ -13,7 +13,7 @@ const Tokenomics = () => {
                     <ul>
                         <li>
                             <div className={styles.tit}>$ PARK</div>
-                            <div className={styles.txt}>GovernanceToken</div>
+                            <div className={styles.txt}>Governance Token</div>
                         </li>
                         <li>
                             <div className={styles.tit}>30,000 PNFT</div>

@@ -45,7 +45,7 @@ const RoadMap = () => {
     return (
         <div id='road-map' className={styles['road-map']}>
             <div className={styles.title}><span>NFT Road Map</span></div>
-            <Row gutter={[80,80]} className={styles['item-wrapper']} justify='space-between'>
+            <Row gutter={[48,48]} className={styles['item-wrapper']} justify='space-between'>
                 {data.map(item => <Col key={item.percentage}>
                     <RoadMapItem
                         percentage={item.percentage}

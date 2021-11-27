@@ -16,7 +16,7 @@ const HeadCard = () => {
                     <p className={styles['subtitle']}>
                         Get your coolest car NFT and join<br /> our Parking Infinity GameFi
                     </p>
-                    <PButton commingSoon={true} className={styles['button']} extra={<img className='right-arrow' src={rightArrow} alt="" />}>Play&Earn</PButton>
+                    <PButton comingSoon={true} className={styles['button']} extra={<img className='right-arrow' src={rightArrow} alt="" />}>Play & Earn</PButton>
                 </div>
             </div>
         </div>
