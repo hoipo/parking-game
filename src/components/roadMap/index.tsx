@@ -25,7 +25,7 @@ const data = [
     },
     {
         percentage: '55', 
-        text: 'drawn to issue special NFT airdrops'
+        text: 'Drawn to issue special NFT airdrops'
     },
     {
         percentage: '60', 
