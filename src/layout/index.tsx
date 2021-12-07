@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { Layout as AntdLayout } from 'antd';
 import Footer from '../components/footer'
 import { Link } from 'react-router-dom';
@@ -24,6 +25,7 @@ const Layout  = ({ children }: LayoutProps) => {
             <li><a href='#tokenomics'>Tokenomics</a></li>
             <li><a href='#'>Docs</a></li>
             <li><a href='#'>Genesis</a></li>
+            <li><a href='#'>Market</a></li>
             {/* <li><a href='#docs'>Docs</a></li> */}
             {/* <li><a href='#genesis'>Genesis</a></li> */}
           </ul>

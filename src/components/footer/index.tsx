@@ -20,7 +20,7 @@ const Footer = () => {
                     <Row justify="space-between" align='middle'>
                         <Col>OUR SOCIALS:</Col>
                         <Col className={styles['circle-border']}>
-                            <a target="_blank" href='https://t.me/Parking_Infinity' rel="noreferrer"><img src={telegramIcon} alt="telegramIcon" /></a>
+                            <a target="_blank" href='https://t.me/parkinginfinity' rel="noreferrer"><img src={telegramIcon} alt="telegramIcon" /></a>
                         </Col>
                         <Col className={styles['circle-border']}>
                             <a target="_blank" href='https://twitter.com/InfinityParking' rel="noreferrer"><img src={twitterIcon} alt="twitterIcon" /></a>
