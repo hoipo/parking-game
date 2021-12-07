@@ -22,6 +22,8 @@ const Layout  = ({ children }: LayoutProps) => {
             <li><a href='#features'>Features</a></li>
             <li><a href='#road-map'>Road Map</a></li>
             <li><a href='#tokenomics'>Tokenomics</a></li>
+            <li><a href='#'>Docs</a></li>
+            <li><a href='#'>Genesis</a></li>
             {/* <li><a href='#docs'>Docs</a></li> */}
             {/* <li><a href='#genesis'>Genesis</a></li> */}
           </ul>
