@@ -6,7 +6,7 @@ import Why from "../components/why"
 import Features from "../components/features"
 import RoadMap from "../components/roadMap"
 import Tokenomics from "../components/tokenomics"
-import Partners from "../components/partners"
+// import Partners from "../components/partners"
 import styles from './styles.module.less';
 
 const Home = () => {
@@ -19,7 +19,7 @@ const Home = () => {
             <Features />
             <RoadMap />
             <Tokenomics />
-            <Partners />
+            {/* <Partners /> */}
         </div>
     )
 }
